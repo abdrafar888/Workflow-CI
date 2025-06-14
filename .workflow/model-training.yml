@@ -21,4 +21,5 @@ jobs:
 
       - name: Run training script
         run: |
-          python MLProject/modelling.py
+          pip install mlflow
+          mlflow run MLProject

@@ -27,6 +27,10 @@ jobs:
           environment-file: MLProject/conda.yaml
           use-mamba: true
 
+      - name: Initialize Conda (Enable conda activate)
+        run: |
+          eval "$(conda shell.bash hook)"
+
       - name: Install MLflow
         run: |
           pip install mlflow

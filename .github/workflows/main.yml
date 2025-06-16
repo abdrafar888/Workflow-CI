@@ -25,4 +25,4 @@ jobs:
 
       - name: Run MLflow Project
         run: |
-          mlflow run . -e main
+          mlflow run ./MLProject -e main
